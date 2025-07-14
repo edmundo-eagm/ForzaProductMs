@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore; 
 using Src.Infrastructure.Contexts;
 using Src.Domain.Entity;
 using Src.Domain.Dto;
@@ -40,12 +41,34 @@ namespace Src.Application.Service
 
         public async Task<ProductDto> GetOne(int id)
         {
-            return await _context.Product.FindAsync(id);
+            var productFound =  await _context.Product.FindAsync(id);
+            if(productFound == null) return null;
+            
+            return new ProductDto
+            {
+                Id = productFound.Id,
+                CreatedAt = productFound.CreatedAt,
+                UpdatedAt = productFound.UpdatedAt,
+                Code = productFound.Code,
+                Description = productFound.Description,
+                Price = productFound.Price
+            };
         }
 
-        public async Task<List<Product>> GetAll()
+        public async Task<List<ProductDto>> GetAll()
         {
-            return await _context.Product.ToListAsync();
+            var products = await _context.Product.ToListAsync();
+            List<ProductDto> toDto = products
+                .Select(u => new ProductDto {
+                    Id = u.Id,
+                    CreatedAt = u.CreatedAt,
+                    UpdatedAt = u.UpdatedAt,
+                    Code = u.Code,
+                    Description = u.Description,
+                    Price = u.Price
+                })
+                .ToList();
+            return toDto;
         }
 
         public async Task<bool> Delete(int id)
@@ -58,7 +81,7 @@ namespace Src.Application.Service
             return true;
         }
 
-        public async Task<bool> Update(int id, ProductUpdateDto data)
+        public async Task<ProductDto> Update(int id, ProductUpdateDto data)
         {
             var productFound = await _context.Product.FindAsync(id);
             if (productFound == null) return null;
@@ -67,7 +90,7 @@ namespace Src.Application.Service
             if(data.Description != null) productFound.Description = productFound.Description;
             if(data.Price != null) productFound.Price = productFound.Price;
 
-            _context.Product.Update(data);
+            _context.Product.Update(productFound);
             await _context.SaveChangesAsync();
             return new ProductDto
             {
