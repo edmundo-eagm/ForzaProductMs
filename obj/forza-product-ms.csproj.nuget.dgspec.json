@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/codespaces-blank/forza-product-ms/forza-product-ms.csproj": {}
+    "/workspaces/codespaces-blank/ForzaProductMs/forza-product-ms.csproj": {}
   },
   "projects": {
-    "/workspaces/codespaces-blank/forza-product-ms/forza-product-ms.csproj": {
+    "/workspaces/codespaces-blank/ForzaProductMs/forza-product-ms.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/codespaces-blank/forza-product-ms/forza-product-ms.csproj",
+        "projectUniqueName": "/workspaces/codespaces-blank/ForzaProductMs/forza-product-ms.csproj",
         "projectName": "forza-product-ms",
-        "projectPath": "/workspaces/codespaces-blank/forza-product-ms/forza-product-ms.csproj",
+        "projectPath": "/workspaces/codespaces-blank/ForzaProductMs/forza-product-ms.csproj",
         "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/codespaces-blank/forza-product-ms/obj/",
+        "outputPath": "/workspaces/codespaces-blank/ForzaProductMs/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/codespace/.nuget/NuGet/NuGet.Config"
@@ -47,11 +47,23 @@
               "target": "Package",
               "version": "[8.0.16, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.7, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.7, )"
             },

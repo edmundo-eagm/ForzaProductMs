@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a+AYHoRMyLg=",
+  "dgSpecHash": "C8BFl/9GwgI=",
   "success": true,
-  "projectFilePath": "/workspaces/codespaces-blank/forza-product-ms/forza-product-ms.csproj",
+  "projectFilePath": "/workspaces/codespaces-blank/ForzaProductMs/forza-product-ms.csproj",
   "expectedPackageFiles": [
     "/home/codespace/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/home/codespace/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",

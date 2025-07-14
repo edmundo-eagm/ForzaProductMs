@@ -42,7 +42,7 @@
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Humanizer.dll": {}
+          "lib/net6.0/_._": {}
         },
         "runtime": {
           "lib/net6.0/Humanizer.dll": {}
@@ -75,7 +75,7 @@
       "Microsoft.Build.Framework/17.8.3": {
         "type": "package",
         "compile": {
-          "ref/net8.0/Microsoft.Build.Framework.dll": {}
+          "ref/net8.0/_._": {}
         },
         "runtime": {
           "lib/net8.0/_._": {
@@ -86,7 +86,7 @@
       "Microsoft.Build.Locator/1.7.8": {
         "type": "package",
         "compile": {
-          "lib/net6.0/Microsoft.Build.Locator.dll": {}
+          "lib/net6.0/_._": {}
         },
         "runtime": {
           "lib/net6.0/Microsoft.Build.Locator.dll": {}
@@ -111,7 +111,7 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net7.0/Microsoft.CodeAnalysis.dll": {
+          "lib/net7.0/_._": {
             "related": ".pdb"
           }
         },
@@ -168,7 +168,7 @@
           "Microsoft.CodeAnalysis.Common": "[4.8.0]"
         },
         "compile": {
-          "lib/net7.0/Microsoft.CodeAnalysis.CSharp.dll": {
+          "lib/net7.0/_._": {
             "related": ".pdb"
           }
         },
@@ -228,7 +228,7 @@
           "Microsoft.CodeAnalysis.Workspaces.Common": "[4.8.0]"
         },
         "compile": {
-          "lib/net7.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {
+          "lib/net7.0/_._": {
             "related": ".pdb"
           }
         },
@@ -290,7 +290,7 @@
           "System.Threading.Channels": "7.0.0"
         },
         "compile": {
-          "lib/net7.0/Microsoft.CodeAnalysis.Workspaces.dll": {
+          "lib/net7.0/_._": {
             "related": ".pdb"
           }
         },
@@ -350,11 +350,8 @@
           "System.Text.Json": "7.0.3"
         },
         "compile": {
-          "lib/net7.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll": {
+          "lib/net7.0/_._": {
             "related": ".pdb;.runtimeconfig.json"
-          },
-          "lib/net7.0/Microsoft.CodeAnalysis.Workspaces.MSBuild.dll": {
-            "related": ".BuildHost.pdb;.BuildHost.runtimeconfig.json;.pdb"
           }
         },
         "runtime": {
@@ -523,7 +520,7 @@
           "System.Text.Json": "9.0.7"
         },
         "compile": {
-          "lib/net8.0/Microsoft.EntityFrameworkCore.Design.dll": {}
+          "lib/net8.0/_._": {}
         },
         "runtime": {
           "lib/net8.0/Microsoft.EntityFrameworkCore.Design.dll": {}
@@ -665,7 +662,7 @@
           "System.Text.Json": "9.0.7"
         },
         "compile": {
-          "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {}
+          "lib/net8.0/_._": {}
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.DependencyModel.dll": {}
@@ -905,7 +902,7 @@
           "System.CodeDom": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/Mono.TextTemplating.dll": {}
+          "lib/net6.0/_._": {}
         },
         "runtime": {
           "lib/net6.0/Mono.TextTemplating.dll": {}
@@ -993,7 +990,7 @@
       "System.CodeDom/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.CodeDom.dll": {}
+          "lib/net6.0/_._": {}
         },
         "runtime": {
           "lib/net6.0/System.CodeDom.dll": {}
@@ -1005,7 +1002,7 @@
       "System.Collections.Immutable/7.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.Collections.Immutable.dll": {}
+          "lib/net7.0/_._": {}
         },
         "runtime": {
           "lib/net7.0/System.Collections.Immutable.dll": {}
@@ -1036,7 +1033,7 @@
       "System.Composition.AttributedModel/7.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.Composition.AttributedModel.dll": {}
+          "lib/net7.0/_._": {}
         },
         "runtime": {
           "lib/net7.0/System.Composition.AttributedModel.dll": {}
@@ -1051,7 +1048,7 @@
           "System.Composition.AttributedModel": "7.0.0"
         },
         "compile": {
-          "lib/net7.0/System.Composition.Convention.dll": {}
+          "lib/net7.0/_._": {}
         },
         "runtime": {
           "lib/net7.0/System.Composition.Convention.dll": {}
@@ -1066,7 +1063,7 @@
           "System.Composition.Runtime": "7.0.0"
         },
         "compile": {
-          "lib/net7.0/System.Composition.Hosting.dll": {}
+          "lib/net7.0/_._": {}
         },
         "runtime": {
           "lib/net7.0/System.Composition.Hosting.dll": {}
@@ -1078,7 +1075,7 @@
       "System.Composition.Runtime/7.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.Composition.Runtime.dll": {}
+          "lib/net7.0/_._": {}
         },
         "runtime": {
           "lib/net7.0/System.Composition.Runtime.dll": {}
@@ -1095,7 +1092,7 @@
           "System.Composition.Runtime": "7.0.0"
         },
         "compile": {
-          "lib/net7.0/System.Composition.TypedParts.dll": {}
+          "lib/net7.0/_._": {}
         },
         "runtime": {
           "lib/net7.0/System.Composition.TypedParts.dll": {}
@@ -1231,7 +1228,7 @@
           "System.Collections.Immutable": "7.0.0"
         },
         "compile": {
-          "lib/net7.0/System.Reflection.Metadata.dll": {}
+          "lib/net7.0/_._": {}
         },
         "runtime": {
           "lib/net7.0/System.Reflection.Metadata.dll": {}
@@ -1274,7 +1271,7 @@
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+          "lib/net6.0/_._": {}
         },
         "runtime": {
           "lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll": {}
@@ -1441,7 +1438,7 @@
       "System.Threading.Channels/7.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.Threading.Channels.dll": {}
+          "lib/net7.0/_._": {}
         },
         "runtime": {
           "lib/net7.0/System.Threading.Channels.dll": {}
@@ -4556,6 +4553,8 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.AspNetCore.OpenApi >= 8.0.16",
+      "Microsoft.EntityFrameworkCore >= 9.0.7",
+      "Microsoft.EntityFrameworkCore.Design >= 9.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.7",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.7",
       "Swashbuckle.AspNetCore >= 6.6.2"
@@ -4567,11 +4566,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/codespaces-blank/forza-product-ms/forza-product-ms.csproj",
+      "projectUniqueName": "/workspaces/codespaces-blank/ForzaProductMs/forza-product-ms.csproj",
       "projectName": "forza-product-ms",
-      "projectPath": "/workspaces/codespaces-blank/forza-product-ms/forza-product-ms.csproj",
+      "projectPath": "/workspaces/codespaces-blank/ForzaProductMs/forza-product-ms.csproj",
       "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/codespaces-blank/forza-product-ms/obj/",
+      "outputPath": "/workspaces/codespaces-blank/ForzaProductMs/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/codespace/.nuget/NuGet/NuGet.Config"
@@ -4606,6 +4605,16 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[8.0.16, )"
+          },
+          "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[9.0.7, )"
+          },
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[9.0.7, )"
           },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
