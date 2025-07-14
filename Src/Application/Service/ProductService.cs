@@ -37,5 +37,47 @@ namespace Src.Application.Service
                 Price = product.Price
             };
         }
+
+        public async Task<ProductDto> GetOne(int id)
+        {
+            return await _context.Product.FindAsync(id);
+        }
+
+        public async Task<List<Product>> GetAll()
+        {
+            return await _context.Product.ToListAsync();
+        }
+
+        public async Task<bool> Delete(int id)
+        {
+            var producto = await _context.Product.FindAsync(id);
+            if (producto == null) return false;
+
+            _context.Product.Remove(producto);
+            await _context.SaveChangesAsync();
+            return true;
+        }
+
+        public async Task<bool> Update(int id, ProductUpdateDto data)
+        {
+            var productFound = await _context.Product.FindAsync(id);
+            if (productFound == null) return null;
+
+            if(data.Code != null) productFound.Code = productFound.Code;
+            if(data.Description != null) productFound.Description = productFound.Description;
+            if(data.Price != null) productFound.Price = productFound.Price;
+
+            _context.Product.Update(data);
+            await _context.SaveChangesAsync();
+            return new ProductDto
+            {
+                Id = productFound.Id,
+                CreatedAt = productFound.CreatedAt,
+                UpdatedAt = productFound.UpdatedAt,
+                Code = productFound.Code,
+                Description = productFound.Description,
+                Price = productFound.Price
+            };
+        }
     }
 }
