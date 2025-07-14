@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "u+cRzc18HyA=",
+  "dgSpecHash": "cjgq7JP41H0=",
   "success": true,
   "projectFilePath": "/workspaces/codespaces-blank/ForzaProductMs/forza-product-ms.csproj",
   "expectedPackageFiles": [
     "/home/codespace/.nuget/packages/automapper/15.0.1/automapper.15.0.1.nupkg.sha512",
     "/home/codespace/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/home/codespace/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
+    "/home/codespace/.nuget/packages/confluent.kafka/2.11.0/confluent.kafka.2.11.0.nupkg.sha512",
     "/home/codespace/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
+    "/home/codespace/.nuget/packages/librdkafka.redist/2.11.0/librdkafka.redist.2.11.0.nupkg.sha512",
     "/home/codespace/.nuget/packages/mediatr/11.1.0/mediatr.11.1.0.nupkg.sha512",
     "/home/codespace/.nuget/packages/mediatr.contracts/1.0.1/mediatr.contracts.1.0.1.nupkg.sha512",
     "/home/codespace/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/11.1.0/mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",

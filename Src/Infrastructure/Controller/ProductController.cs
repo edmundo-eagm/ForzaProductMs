@@ -1,29 +1,34 @@
-// using MediatR;
-// using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using Src.Application.Service;
+using Src.Domain.Dto;
 
-// [ApiController]
-// [Route("api/[controller]")]
-// public class ItemsController : ControllerBase
-// {
-//     private readonly IMediator _mediator;
 
-//     public ItemsController(IMediator mediator)
-//     {
-//         _mediator = mediator;
-//     }
+[ApiController]
+[Route("api/[controller]")]
+public class ProductController : ControllerBase
+{
+    private readonly ProductService _service;
 
-//     [HttpPost]
-//     public async Task<IActionResult> Create([FromBody] CreateItemCommand command)
-//     {
-//         var id = await _mediator.Send(command);
-//         return CreatedAtAction(nameof(GetById), new { id }, null);
-//     }
+    public ProductController(ProductService service)
+    {
+        _service = service;
+    }
 
-//     [HttpGet("{id}")]
-//     public async Task<IActionResult> GetById(int id)
-//     {
-//         var item = await _mediator.Send(new GetItemByIdQuery(id));
-//         if (item == null) return NotFound();
-//         return Ok(item);
-//     }
-// }
+    // [HttpGet]
+    // public IActionResult GetAll() => Ok(_service.GetAll());
+
+    // [HttpGet("{id}")]
+    // public IActionResult GetById(int id)
+    // {
+    //     var producto = _service.GetById(id);
+    //     if (producto == null) return NotFound();
+    //     return Ok(producto);
+    // }
+
+    [HttpPost]
+    public async Task<IActionResult> Create([FromBody] ProductCreateDto data)
+    {
+        var response = await _service.Create(data);
+        return Ok(response);
+    }
+}

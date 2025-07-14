@@ -14,11 +14,18 @@ namespace Src.Infrastructure.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Ignore<BaseEntity>();
+
             base.OnModelCreating(modelBuilder);
 
             var entityTypes = Assembly.GetExecutingAssembly()
                                       .GetTypes()
-                                      .Where(t => typeof(BaseEntity).IsAssignableFrom(t));
+                                      .Where(t => 
+                                        typeof(BaseEntity).IsAssignableFrom(t) &&
+                                        t.IsClass &&
+                                        !t.IsAbstract &&
+                                        !t.IsGenericType
+                                      );
 
             foreach (var entityType in entityTypes)
             {

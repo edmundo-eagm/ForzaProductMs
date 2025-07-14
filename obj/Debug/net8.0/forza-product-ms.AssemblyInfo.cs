@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("forza-product-ms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0723696af1fac0716370ad5dcdc43ba3162a25f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f862147f2da8908647132235c7c7f2def88d8d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("forza-product-ms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("forza-product-ms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
