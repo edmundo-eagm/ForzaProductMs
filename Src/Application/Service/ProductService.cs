@@ -86,9 +86,9 @@ namespace Src.Application.Service
             var productFound = await _context.Product.FindAsync(id);
             if (productFound == null) return null;
 
-            if(data.Code != null) productFound.Code = productFound.Code;
-            if(data.Description != null) productFound.Description = productFound.Description;
-            if(data.Price != null) productFound.Price = productFound.Price;
+            if(data.Code != null) productFound.Code = data.Code ;
+            if(data.Description != null) productFound.Description = data.Description ;
+            if(data.Price != null) productFound.Price = (decimal)data.Price ;
 
             _context.Product.Update(productFound);
             await _context.SaveChangesAsync();
