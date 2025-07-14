@@ -1,6 +1,6 @@
 namespace Src.Domain.Entity
 {
-    public class ProductoModel : BaseEntity
+    public class ProductEntity : BaseEntity
     {
         public required string Code { get; set; }
         public required string Description { get; set; }

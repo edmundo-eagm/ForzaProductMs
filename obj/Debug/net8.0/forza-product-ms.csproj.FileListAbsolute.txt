@@ -338,3 +338,7 @@
 /workspaces/codespaces-blank/ForzaProductMs/obj/Debug/net8.0/forza-product-ms.pdb
 /workspaces/codespaces-blank/ForzaProductMs/obj/Debug/net8.0/forza-product-ms.genruntimeconfig.cache
 /workspaces/codespaces-blank/ForzaProductMs/obj/Debug/net8.0/ref/forza-product-ms.dll
+/workspaces/codespaces-blank/ForzaProductMs/bin/Debug/net8.0/AutoMapper.dll
+/workspaces/codespaces-blank/ForzaProductMs/bin/Debug/net8.0/MediatR.dll
+/workspaces/codespaces-blank/ForzaProductMs/bin/Debug/net8.0/MediatR.Contracts.dll
+/workspaces/codespaces-blank/ForzaProductMs/bin/Debug/net8.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
